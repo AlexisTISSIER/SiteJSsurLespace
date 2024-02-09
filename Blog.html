@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-x5dXCWQIJAO8gCk2Aep2sfKXNtRb3wu3gwUtzLJM+T4GgboXG4z+nCSTj3KsFT+Pv39rOguNcm0YwTwf49zkPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Space Blog</title>
+</head>
+<body>
+    <img class="nasa" alt="">
+    <header>
+        <nav>
+            <a href="index.html"><img class="logo" src="image/logo.png"></a>
+            <ul> 
+                <li><a class="navlink" href="index.html">ACCUEIL</a></li>
+                <li><a class="navlink" href="Planets.html">PROCHAINE MISSION</a></li>
+                <li><a class="navlink" href="Blog.html">BLOG</a></li>
+            </ul> 
+        </nav>
+    </header>
+    <main class="container">
+        <div class="container-left">
+            <h2>Articles récents</h2>
+            <div class="article-preview">
+                <h3><a class="navlink" href="article1.html">Découverte d'une nouvelle planète habitable</a></h3>
+                <img class="imagearticle" src="image/planete.jpg">
+                <p>Une équipe de chercheurs vient de découvrir une planète semblable à la Terre, propice à la vie...</p>
+            </div>
+            <div class="article-preview">
+                <h3><a class="navlink" href="article2.html">Les dernières avancées en propulsion spatiale</a></h3>
+                <img class="imagearticle" src="image/stars.jpg">
+                <p>Une nouvelle technologie révolutionnaire pourrait réduire considérablement le temps de voyage vers Mars...</p>
+            </div>
+            <a href="add.blog.html"><button class="button2">nouveau Blog</button></a>
+        </div>
+        <div class="container-right">
+            <div class="about">
+                <h2>À propos de notre blog</h2>
+                <p>Bienvenue sur notre blog spatial, où nous vous tenons au courant des dernières découvertes et avancées dans le domaine de l'exploration spatiale...</p>
+                <a href="Blog.html"><button>En savoir plus</button></a>
+            </div>
+            <div class="chiffre">
+                <h2>Statistiques</h2>
+                <p>Nous nous efforçons de vous apporter les informations les plus précises et les plus intéressantes sur l'univers...</p>
+                <div class="wrapperstat">
+                    <p id="peopleCount">Nombre d'êtres vivants recensés : </p>
+                    <p id="vehiclesCount">Nombre de véhicules recensés : </p>
+                    <p id="planetsCount">Nombre de planètes recensées : </p>
+                </div>
+                <a href="Planets.html"><button class="button2">Participer à la prochaine mission</button></a>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
