@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blog.creation.css" type="text/css">
+    <title>Blog</title>
+</head>
+<body>
+    <h1>Mon Blog sur l'espace si ton blog est pertinent je l'ajouterais sur la page blog</h1>
+
+    <form id="article-form">
+        <label for="title">Titre :</label><br>
+        <input type="text" id="title" name="title" required><br>
+        <label for="content">Contenu :</label><br>
+        <textarea id="content" name="content" required></textarea><br>
+        <button type="submit">Publier</button>
+    </form>
+
+    <div onclick="deleteArticle(index)" id="articles-list"></div>
+
+    <script src="blog.js"></script>
+</body>
+</html>
