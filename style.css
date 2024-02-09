@@ -294,4 +294,17 @@ p {
   border: solid 2px #333;
   margin: 10px;
   max-width: 400px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+}
+
+.article-preview:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+  border: solid 2px #ff9800;
+
 }
