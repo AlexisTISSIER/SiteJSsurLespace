@@ -131,3 +131,27 @@ document.getElementById('searchForm').addEventListener('submit', async function(
 // Appel initial pour récupérer les planètes et remplir les options de sélection de terrain
 fetchPlanets();
 
+// Récupérer et afficher une image de l'API NASA APOD
+async function displayImageFromAPI() {
+    try {
+        const maCleAPI = "bjCirviyEKCageagswN9SsdlsSfW8gdckzxaEfNZ";
+        const urlAPI = `https://api.nasa.gov/planetary/apod?api_key=${maCleAPI}`;
+
+        // Fetch l'image depuis l'API
+        const response = await fetch(urlAPI);
+        const imageData = await response.json();
+
+        // Sélectionner l'élément avec la classe "nasa"
+        const imageNASA = document.querySelector('.nasa');
+
+        // Mettre à jour l'attribut src de l'image avec l'URL de l'image de l'API
+        imageNASA.src = imageData.url;
+        imageNASA.alt = imageData.title;
+    } catch (error) {
+        console.error('Une erreur s\'est produite lors de la récupération de l\'image depuis l\'API :', error);
+    }
+}
+
+// Appel de la fonction pour récupérer et afficher l'image au chargement de la page
+window.onload = displayImageFromAPI;
+fetchPlanets();
