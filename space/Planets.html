@@ -9,6 +9,7 @@
     <title>Space</title>
 </head>
 <body>
+    <img class="nasa" alt="">
     <header>
         <nav>
             <a href="index.html"><img class="logo" src="image/logo.png"></a>
@@ -20,9 +21,9 @@
     </header>
     <main class="container">
         <div class="container-left">
-            <h3><i class="fas fa-globe"></i><br> PLANETE</h3> 
-            <h3><i class="fas fa-space-shuttle"></i><br>Vehicules</h3>
-            <h3><i class="fas fa-users"></i><br> Personnes</h3>
+            <h3><i class="fas fa-globe" style="color: #000000;"></i><br> PLANETE</h3> 
+            <h3><i class="fas fa-space-shuttle" style="color: #000000;"></i><br>Vehicules</h3>
+            <h3><i class="fas fa-users" style="color: #000000;"></i><br> Personnes</h3>
         </div>
         <div class="container-global">
             <div class="rechercher">
@@ -41,8 +42,12 @@
 
             </div>
             <div class="imageplanete">
-                <p>image planete</p>
-                <img src="" alt="image planete">
+                <p>Le fond que vous voyez est une image capturée par le télescope de la NASA.<br>Cette image est automatiquement mise à jour chaque jour à une heure précise grâce à une API et une clé API fournie par la NASA.<br>
+                    Pour obtenir cette clé API, j'ai utilisé le site web https://api.nasa.gov/.<br>
+                    Cette plateforme m'a permis de générer une clé API unique qui me donne accès à divers services et données de la NASA.<br>
+                    L'URL que j'utilise pour récupérer l'image de fond est https://api.nasa.gov/planetary/apod?api_key=${maCleAPI}.<br>
+                    Cette URL spécifique me permet d'appeler l'API de la NASA et de récupérer l'image du jour à afficher en arrière-plan de la page. 
+                </p>
             </div>
         </div>
     </main>
