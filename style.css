@@ -308,3 +308,10 @@ p {
   border: solid 2px #ff9800;
 
 }
+
+.navlink:hover {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+}
