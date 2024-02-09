@@ -30,6 +30,7 @@ table {
 
 h3 {
   padding: 20px;
+  text-decoration: none;
 }
 
 .logo:hover {
@@ -278,4 +279,19 @@ p {
   letter-spacing: 1px;
   font-stretch: expanded;
   padding: 5px;
+}
+
+.navlink {
+  text-decoration: none;
+  color: #333;
+}
+
+.imagearticle {
+    width: 200px;
+}
+
+.article-preview {
+  border: solid 2px #333;
+  margin: 10px;
+  max-width: 400px;
 }
